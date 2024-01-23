@@ -1,0 +1,18 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+button, .notification {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
