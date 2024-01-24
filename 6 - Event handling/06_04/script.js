@@ -5,16 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event Bubbling
     actionButton.addEventListener('click', () => console.log('Button clicked!'));
-    innerContainer.addEventListener('click', () => console.log('Inner container clicked!'));
-    outerContainer.addEventListener('click', () => console.log('Outer container clicked!'));
+    innerContainer.addEventListener('click', () => console.log('Div clicked!'));
+    outerContainer.addEventListener('click', () => console.log('Outer div clicked!'));
 
     // Event Capturing
-    outerContainer.addEventListener('click', () => console.log('Outer container capturing!'), true);
-    innerContainer.addEventListener('click', () => console.log('Inner container capturing!'), true);
+    actionButton.addEventListener('click', () => console.log('Button clicked!'), true);
+    innerContainer.addEventListener('click', () => console.log('Div clicked!'), true);
+    outerContainer.addEventListener('click', () => console.log('Outer div clicked!'), true);
 
-    // Stopping Propagation
+    // Stop Propagation
     actionButton.addEventListener('click', (e) => {
-        console.log('Button click - stopped propagation!');
+        console.log('Button clicked!');
         e.stopPropagation();
     });
+    innerContainer.addEventListener('click', () => console.log('Div clicked!'));
+    
 });
