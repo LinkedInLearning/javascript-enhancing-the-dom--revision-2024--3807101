@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+#outerContainer {
+    background-color: lightblue;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+#innerContainer {
+    background-color: lightcoral;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
