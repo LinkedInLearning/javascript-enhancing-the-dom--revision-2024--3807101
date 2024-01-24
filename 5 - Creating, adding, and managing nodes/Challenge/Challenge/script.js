@@ -11,5 +11,5 @@
 // 4. Replace the old paragraph at the top of the page with a new one.
 //    Hint: Create a new 'p' element and use replaceChild.
 
-// 5. Make the image of the bin vanish from the page.
-//    Hint: Use removeChild on the parent of the 'binImage'.
+// 5. Make the image of the puppy vanish from the page. (I know, terrible!)
+//    Hint: Use removeChild on the parent of the 'puppyImage'.
