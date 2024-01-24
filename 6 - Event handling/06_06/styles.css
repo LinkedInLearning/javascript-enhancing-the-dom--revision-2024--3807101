@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+#contentArea {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+}
