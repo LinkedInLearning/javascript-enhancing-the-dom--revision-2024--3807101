@@ -20,6 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
         //     // Add more validation checks
         // }
 
-        // Your code goes here...
     });
 });
