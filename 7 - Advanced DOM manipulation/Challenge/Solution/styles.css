@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#formContainer {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    margin: 10px 0;
+    padding: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#formFeedback {
+    margin-top: 10px;
+}
