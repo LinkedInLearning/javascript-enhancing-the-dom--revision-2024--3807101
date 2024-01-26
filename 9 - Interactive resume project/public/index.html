@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="navbar">
+            <li><a href="#" onclick="showSection('experiences')">Experiences</a></li>
+            <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="experiences">
+            <h1>Experience</h1>
+            <button id="sortBtn" onclick="sortExperiences()">Sort by Date</button>
+            <ul id="experienceList"></ul>
+            <button onclick="document.getElementById('addExperienceForm').style.display='block'">Add Experience</button>
+
+            <form id="addExperienceForm" style="display: none;" onsubmit="addExperience(event)">
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required>
+
+                <label for="role">Role:</label>
+                <input type="text" id="role" name="role" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <!-- Contact details or form goes here -->
+            <div id="contactInfo">
+                <!-- Contact information will be displayed here -->
+            </div>
+            <button id="editContactBtn" onclick="toggleContactForm()">Edit Contact</button>
+            <button id="addContactBtn" onclick="toggleContactForm()">Add Contact</button>
+
+            <form id="contactForm" style="display: none;" onsubmit="saveContactInfo(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="linkedin">LinkedIn:</label>
+                <input type="url" id="linkedin" name="linkedin">
+
+                <input type="submit" value="Save">
+            </form>
+
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <ul id="skillsList"></ul>
+            <form id="addSkillForm" onsubmit="addSkill(event)">
+                <input type="text" id="newSkill" name="newSkill" required>
+                <input type="submit" value="Add Skill">
+            </form>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/skills.js"></script>
+
+</body>
+
+</html>
