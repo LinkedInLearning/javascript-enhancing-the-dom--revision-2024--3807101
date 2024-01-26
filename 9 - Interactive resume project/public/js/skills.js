@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 function loadSkills() {
     fetch('/api/skills')
@@ -50,4 +51,18 @@ function deleteSkill(skill) {
             loadSkills();
         })
         .catch(error => console.error('Error:', error));
+=======
+document.addEventListener('DOMContentLoaded', () => {
+
+});
+
+function loadSkills() {
+}
+
+function addSkill(event) {
+}
+
+function deleteSkill(skill) {
+    
+>>>>>>> Stashed changes
 }
