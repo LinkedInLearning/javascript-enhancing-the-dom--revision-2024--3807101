@@ -20,11 +20,11 @@
     <main>
         <section id="experiences">
             <h1>Experience</h1>
-            <button id="sortBtn" onclick="sortExperiences()">Sort by Date</button>
+            <button id="sortBtn">Sort by Date</button>
             <ul id="experienceList"></ul>
-            <button onclick="document.getElementById('addExperienceForm').style.display='block'">Add Experience</button>
+            <button id="addExperienceBtn">Add Experience</button>
 
-            <form id="addExperienceForm" style="display: none;" onsubmit="addExperience(event)">
+            <form id="addExperienceForm" style="display: none;">
                 <label for="company">Company:</label>
                 <input type="text" id="company" name="company" required>
 
@@ -47,10 +47,10 @@
             <div id="contactInfo">
                 <!-- Contact information will be displayed here -->
             </div>
-            <button id="editContactBtn" onclick="toggleContactForm()">Edit Contact</button>
-            <button id="addContactBtn" onclick="toggleContactForm()">Add Contact</button>
+            <button id="editContactBtn">Edit Contact</button>
+            <button id="addContactBtn">Add Contact</button>
 
-            <form id="contactForm" style="display: none;" onsubmit="saveContactInfo(event)">
+            <form id="contactForm" style="display: none;">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -71,7 +71,7 @@
         <section id="skills">
             <h1>Skills</h1>
             <ul id="skillsList"></ul>
-            <form id="addSkillForm" onsubmit="addSkill(event)">
+            <form id="addSkillForm">
                 <input type="text" id="newSkill" name="newSkill" required>
                 <input type="submit" value="Add Skill">
             </form>
