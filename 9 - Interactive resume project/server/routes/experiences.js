@@ -4,7 +4,7 @@ const router = express.Router();
 const dataPath = './data/experiences.json';
 
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     fs.readFile(dataPath, 'utf8', (err, data) => {
         if (err) {
             throw err;
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.post('/', (req, res) => {
+router.post('/', (req, res) => {
     fs.readFile(dataPath, 'utf8', (err, data) => {
         if (err) {
             throw err;

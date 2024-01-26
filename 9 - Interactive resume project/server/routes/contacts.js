@@ -5,7 +5,7 @@ const contactPath = './data/contact.json';
 
 
 // Route to get contact information
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     fs.readFile(contactPath, 'utf8', (err, data) => {
         if (err) {
             // If there's an error, it could mean the file doesn't exist,
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 // Route to save contact information
-app.post('/', (req, res) => {
+router.post('/', (req, res) => {
     const newContactInfo = req.body;
     fs.writeFile(contactPath, JSON.stringify(newContactInfo, null, 2), (err) => {
         if (err) {

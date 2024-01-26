@@ -5,7 +5,7 @@ const skillsPath = './data/skills.json';
 
 
 // Route to get skills
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     fs.readFile(skillsPath, 'utf8', (err, data) => {
         if (err) {
             res.status(500).send('Error reading skills data');
@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 // Route to add a new skill
-app.post('/', (req, res) => {
+router.post('/', (req, res) => {
     fs.readFile(skillsPath, 'utf8', (err, data) => {
         if (err) {
             res.status(500).send('Error reading skills data');
@@ -35,7 +35,7 @@ app.post('/', (req, res) => {
 });
 
 // Route to delete a skill
-app.delete('/', (req, res) => {
+router.delete('/', (req, res) => {
     fs.readFile(skillsPath, 'utf8', (err, data) => {
         if (err) {
             res.status(500).send('Error reading skills data');
