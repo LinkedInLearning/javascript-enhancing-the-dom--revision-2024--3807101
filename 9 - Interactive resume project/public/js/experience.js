@@ -12,6 +12,6 @@ function addExperience(event) {
 
 let sortAscending = true;
 
-function sortExperiences() {
+function sortExperiences() { 
     
 }
