@@ -16,5 +16,11 @@
     "role": "Trainer",
     "date": "2015-01-28",
     "description": "Teaching things"
+  },
+  {
+    "company": "Company xyz",
+    "role": "Software developer",
+    "date": "2024-01-28",
+    "description": "Creating apps"
   }
 ]
