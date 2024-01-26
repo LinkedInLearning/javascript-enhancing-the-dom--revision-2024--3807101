@@ -3,7 +3,7 @@ function fetchAndLoadExperiences() {
 }
 
 function displayExperiences(experiences) {
-    
+   
 }
 
 function addExperience(event) {
@@ -12,6 +12,6 @@ function addExperience(event) {
 
 let sortAscending = true;
 
-function sortExperiences() { 
-    
+function sortExperiences() {
+   
 }
