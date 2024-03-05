@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Interaction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="formContainer">
+        <h1>User Information</h1>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" aria-label="Name">
+
+        <h2>Choose Your Department</h2>
+        <select id="departmentSelect" aria-label="Select Department">
+            <option value="sales">Sales</option>
+            <option value="marketing">Marketing</option>
+            <option value="development">Development</option>
+        </select>
+
+        <h2>Employee Status</h2>
+        <label>
+            <input type="radio" name="status" value="full-time" checked> Full-Time
+        </label>
+        <label>
+            <input type="radio" name="status" value="part-time"> Part-Time
+        </label>
+
+        <h2>Newsletter Subscription</h2>
+        <label>
+            <input type="checkbox" id="newsletterCheckbox"> Subscribe to newsletter
+        </label>
+
+        <button id="updateButton" onclick="updatePage()">Update Information</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

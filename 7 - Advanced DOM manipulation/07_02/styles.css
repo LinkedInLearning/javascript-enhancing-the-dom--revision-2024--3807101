@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#todoListContainer {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    margin: 10px 0;
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+
+button {
+    padding: 7px 15px;
+    margin: 5px;
+    cursor: pointer;
+}

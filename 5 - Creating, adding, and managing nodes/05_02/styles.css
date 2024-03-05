@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+#dashboard {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+#profilePicture img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+label,
+select {
+    display: block;
+    margin: 10px 0;
+}

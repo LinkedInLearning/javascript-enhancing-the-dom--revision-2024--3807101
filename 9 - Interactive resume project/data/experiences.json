@@ -1,0 +1,20 @@
+[
+  {
+    "company": "Linkedin",
+    "role": "Software developer",
+    "date": "2024-01-24",
+    "description": "Coding apps"
+  },
+  {
+    "company": "IT fundamentals",
+    "role": "Teacher",
+    "date": "2023-04-06",
+    "description": "Explaining fun fundamentals"
+  },
+  {
+    "company": "Bright Boost",
+    "role": "Trainer",
+    "date": "2015-01-28",
+    "description": "Teaching things"
+  }
+]
