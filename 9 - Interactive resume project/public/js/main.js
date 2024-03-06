@@ -9,6 +9,7 @@ function showSection(sectionId) {
     // Hide all sections
     document.getElementById('experiences').classList.remove('active');
     document.getElementById('contact').classList.remove('active');
+    document.getElementById('skills').classList.remove('active');
 
     // Show the selected section
     document.getElementById(sectionId).classList.add('active');
